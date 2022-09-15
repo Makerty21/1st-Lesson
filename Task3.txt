@@ -1,5 +1,4 @@
 
-
 using System;
 class HelloWorld {
   static void Main() {
@@ -8,12 +7,14 @@ class HelloWorld {
     double a0=2; // Первый Элемент
     double S=12312; //Сумма элементов последовательностей до N(Включительно)
     double d; //Шаг
-    string vvod1 = Console.ReadLine();
-    int n = Convert.ToInt32(vvod1); //Номер искомого элемент прогрессии
-    double z; //Искомый элемент прогрессии
+    double z;
+    if (N>0)
+    {
     d=(2*S/N-2*a0)/(N-1);
-    z=a0+d*(n-1);
+    z=a0+d*(N-1);
     Console.WriteLine(d);
     Console.WriteLine(z);
+    }
+    else Console.WriteLine("N must be greater than one!!!");
   }
 }
