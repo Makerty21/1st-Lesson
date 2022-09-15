@@ -1,0 +1,19 @@
+
+
+using System;
+class HelloWorld {
+  static void Main() {
+    string vvod = Console.ReadLine();
+    int N = Convert.ToInt32(vvod); //Количество членов прогрессии
+    double a0=2; // Первый Элемент
+    double S=12312; //Сумма элементов последовательностей до N(Включительно)
+    double d; //Шаг
+    string vvod1 = Console.ReadLine();
+    int n = Convert.ToInt32(vvod1); //Номер искомого элемент прогрессии
+    double z; //Искомый элемент прогрессии
+    d=(2*S/N-2*a0)/(N-1);
+    z=a0+d*(n-1);
+    Console.WriteLine(d);
+    Console.WriteLine(z);
+  }
+}
